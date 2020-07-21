@@ -1,0 +1,68 @@
+.select-container {
+  font-size: 1.3rem;
+  color: darkslategrey;
+}
+.select-input-selected {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  width: 15rem;
+  height: 3rem;
+  background-color: cyan;
+}
+.select-input-selected svg {
+  position: absolute;
+  left: 14.2rem;
+  top: 0.8rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  opacity: 0.7;
+}
+.select-input-selected-caret-enter {
+  transform: rotate(0deg);
+}
+.select-input-selected-caret-enter-active {
+  transform: rotate(180deg);
+  transition: transform 600ms ease;
+}
+.select-input-selected-caret-enter-done {
+  transform: rotate(180deg);
+}
+.select-input-selected-caret-exit {
+  transform: rotate(180deg);
+}
+.select-input-selected-caret-exit-active {
+  transform: rotate(0deg);
+  transition: transform 400ms ease;
+}
+.select-input-menu-enter {
+  overflow: hidden;
+  height: 0rem;
+}
+.select-input-menu-enter-active {
+  height: 9rem;
+  transition: height 600ms ease;
+}
+
+.select-input-menu-exit {
+  overflow: hidden;
+  height: 9rem;
+}
+.select-input-menu-exit-active {
+  height: 0;
+  transition: height 400ms ease;
+}
+.select-input-menu-item {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  width: 15rem;
+  background-color: cyan;
+  transition: background-color 200ms;
+}
+.select-input-menu-item:active,
+.select-input-menu-item:hover {
+  background-color: darkcyan;
+}
+
